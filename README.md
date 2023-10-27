@@ -66,7 +66,7 @@ python src/train_bash.py \
     --do_train \
     --dataset name_of_your_dataset_in_dataset_info_json \
     --finetuning_type lora \
-    --output_dir path_to_sft_checkpoint \
+    --output_dir path_to_CoachLM_checkpoint \
     --per_device_train_batch_size 32 \
     --gradient_accumulation_steps 1 \
     --lr_scheduler_type cosine \
@@ -75,6 +75,25 @@ python src/train_bash.py \
     --learning_rate 2e-4 \
     --num_train_epochs 7 \
     --fp16 true \
+    --lora_rank 64 \
+    --lora_alpha 32 \
+    --lora_target "query_key_value,dense,dense_h_to_4h,dense_4h_to_h" \
+    --use_v2 true \
+```
+
+(4) Inference
+The inference dataset should be formatted the same as example.json, with output field empty. 
+```
+python src/train_sft.py \
+    --do_predict \
+    --finetuning_type lora \
+    --dataset dataset_for_inference \
+    --model_name_or_path path_to_your_chatglm2_model \
+    --checkpoint_dir path_to_CoachLM_checkpoint \
+    --output_dir path_to_inference_result \
+    --per_device_eval_batch_size 32 \
+    --predict_with_generate  \
+    --eval_num_beams 1  \
     --lora_rank 64 \
     --lora_alpha 32 \
     --lora_target "query_key_value,dense,dense_h_to_4h,dense_4h_to_h" \
