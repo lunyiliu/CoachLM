@@ -86,7 +86,8 @@ python src/train_bash.py \
 
 The inference dataset should be formatted the same as example.json, with output field empty. 
 ```
-python src/train_sft.py \
+python src/train_bash.py \
+    --stage sft \
     --do_predict \
     --finetuning_type lora \
     --dataset dataset_for_inference \
