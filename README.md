@@ -82,6 +82,8 @@ python src/train_bash.py \
 ```
 
 (4) Inference
+
+
 The inference dataset should be formatted the same as example.json, with output field empty. 
 ```
 python src/train_sft.py \
