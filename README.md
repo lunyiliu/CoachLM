@@ -9,7 +9,7 @@ $ pip install requirements.txt
 ## ✨ Expert Revision Dataset
 We created a dataset of 2301 samples containing the raw instruction pairs from the Alpaca52k dataset and the human-revised results in order to improve the quality of these LLM-generated instruction pairs.
 ```
-Expert Revision Datase.json
+Expert Revision Dataset.json
 {
   "Raw Instruction": "",
   "Raw Input": "",
@@ -103,3 +103,14 @@ python src/train_bash.py \
     --use_v2 true \
 ```
 For more information, please refer to [ChatGLM-Efficient-Tuning](https://github.com/hiyouga/ChatGLM-Efficient-Tuning).
+
+## 📝 CoachLM150 Test Set
+We created a instruction-following test suite for LLMs, containing 150 questions covering topics from information extraction, scientific inference, dialogue completion, brainstorming, in-domain question answering, and more. For each question, a reference response is provided by human.
+```
+CoachLM150 Test Set.json
+{
+  "instruction": "",
+  "input": "",
+  "reference response": ""
+}
+```
