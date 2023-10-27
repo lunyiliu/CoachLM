@@ -104,7 +104,7 @@ python src/train_bash.py \
 ```
 For more information, please refer to [ChatGLM-Efficient-Tuning](https://github.com/hiyouga/ChatGLM-Efficient-Tuning).
 
-## 📝 CoachLM150 Test Set
+## 🧪 CoachLM150 Test Set
 We created a instruction-following test suite for LLMs, containing 150 questions covering topics from information extraction, scientific inference, dialogue completion, brainstorming, in-domain question answering, and more. For each question, a reference response is provided by human.
 ```
 CoachLM150 Test Set.json
