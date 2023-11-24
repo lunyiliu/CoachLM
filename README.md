@@ -1,6 +1,9 @@
 # CoachLM <img style="float: right;" src="asset/coachLM.png" width="60">
 
 This repo contains codes and the human-created training dataset for CoachLM, an automatic instruction revision approach for LLM instruction tuning.
+
+https://arxiv.org/abs/2311.13246
+
 ## 📣 Introduction
 <p align="center">
     <img src="asset/illustration.png" width=800 />
