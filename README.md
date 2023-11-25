@@ -131,3 +131,6 @@ CoachLM150 Test Set.json
   "reference response": ""
 }
 ```
+
+## ⚠️ Limitations
+The current 7B version of CoachLM may still generate undesirable content occasionally, including hallucinated content, repeated text and meaningless phrases. To mitigate the disorderness and increase the reliability, a rule-based post-processing performed on the output of CoachLM is recommended, removing the non-English characters, repeated strings and excessively long answers. Another solution is to train CoachLM on larger foundation models such as 13B or 60B.
