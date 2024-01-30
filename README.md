@@ -2,8 +2,9 @@
 
 This repo contains codes and the human-created training dataset for CoachLM, an automatic instruction revision approach for LLM instruction tuning.
 
-https://arxiv.org/abs/2311.13246
+Paper: https://arxiv.org/abs/2311.13246
 
+See more cases analysis for the human revision in Technical Report.pdf
 ## 📣 Introduction
 <p align="center">
     <img src="asset/illustration.png" width=800 />
