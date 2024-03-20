@@ -5,6 +5,8 @@ This repo contains codes and the human-created training dataset for CoachLM, an 
 Paper: https://arxiv.org/abs/2311.13246
 
 See more cases analysis for the human revision in Technical Report.pdf
+## 📰 News
+CoachLM has been accepted by IEEE International Conference on Data Engineering (ICDE) 2024🎉🎉🎉🎉🎉🎉.
 ## 📣 Introduction
 <p align="center">
     <img src="asset/illustration.png" width=800 />
